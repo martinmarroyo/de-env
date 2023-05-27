@@ -1,0 +1,24 @@
+############### Credentials ################################################
+# Token for accessing Jupyter Server
+JUPYTER_TOKEN=letmein
+
+### Datalake Instructions ######
+# 1. Go to http://localhost:9991 and login with the minio Credentials
+# 2. Go to "Access Keys" -> "Create Access Key", then click "Create"
+# 3. Add the access key id and secret access key to the environment variables below
+# 4. Restart the `dev` container with `docker compose up -d dev`
+# 5. Double-check that the variables are there: 
+#   `docker exec -it dev bash -c "printenv | grep -i AWS"`
+
+# Datalake access configs
+AWS_ACCESS_KEY_ID=your-access-key
+AWS_REGION=us-east-1
+AWS_SECRET_ACCESS_KEY=your-secret-access-key
+AWS_ENDPOINT=http://datalake:9000
+
+# Postgres/Warehouse access configs for starter database
+DB_HOST=warehouse 
+DB_PORT=5432
+DB_USERNAME=admin
+DB_PASSWORD=password
+DB_NAME=mydb

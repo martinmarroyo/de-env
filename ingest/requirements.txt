@@ -1,0 +1,12 @@
+# Requirements for base environment - add any libraries that you would install with pip through here
+sqlalchemy
+psycopg2-binary
+jupyter
+notebook
+pandas
+matplotlib
+seaborn
+numpy
+dash
+boto3
+awswrangler
